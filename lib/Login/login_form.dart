@@ -1,3 +1,4 @@
+import 'package:demo_login/Components/have_account_check.dart';
 import 'package:demo_login/constant.dart';
 import 'package:flutter/material.dart';
 
@@ -49,6 +50,10 @@ class LoginForm extends StatelessWidget {
               child: Text("Login".toUpperCase()),
             )),
         const SizedBox(height: defaultPadding),
+        HaveAccountCheck(press: () {
+          // TODO: press function!!!
+          print("click sign up!");
+        })
       ],
     ));
   }
